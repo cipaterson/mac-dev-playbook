@@ -25,16 +25,13 @@ homebrew_cask_apps:
   - visual-studio-code
   - romkatv/powerlevel10k/powerlevel10k
   ## - dozer  # or hidden or some other menu items manager
-  ## already installed outside ansible:
-  ## - brave-browser
-  ## - multipass
-    ## - filezilla # There is no cask
+  ## - filezilla # There is no cask
 
 mas_installed_apps:
-#  - { id: 443987910, name: "1Password" }
-#  - { id: 498486288, name: "Quick Resizer" }
-#  - { id: 557168941, name: "Tweetbot" }
-##  - { id: 497799835, name: "Xcode" }
+  #  - { id: 443987910, name: "1Password" }
+  #  - { id: 498486288, name: "Quick Resizer" }
+  #  - { id: 557168941, name: "Tweetbot" }
+  ##  - { id: 497799835, name: "Xcode" }
   - { id: 405399194, name: "Kindle" }
   - { id: 1103915944, name: "Greeenshot" }
 
