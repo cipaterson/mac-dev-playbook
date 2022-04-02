@@ -24,8 +24,9 @@ homebrew_cask_apps:
   - vlc
   - visual-studio-code
   - romkatv/powerlevel10k/powerlevel10k
-  ## - dozer  # or hidden or some other menu items manager
-  ## - filezilla # There is no cask
+  - brave-browser
+  - multipass
+    ## - filezilla # There is no cask
 
 mas_installed_apps:
   #  - { id: 443987910, name: "1Password" }
