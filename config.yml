@@ -7,6 +7,11 @@ homebrew_taps:
 
 homebrew_uninstalled_packages:
   - cowsay
+  - sqlite
+  - mcrypt
+  - node
+  - nvm
+  - php
 
 homebrew_installed_packages:
   - espanso
@@ -14,7 +19,6 @@ homebrew_installed_packages:
 
 homebrew_cask_apps:
   - Joplin
-    ## - aText  replaced by espanso!
   - google-drive
   - dropbox
   - stretchly
