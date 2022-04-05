@@ -1,13 +1,13 @@
 dotfiles_repo: https://github.com/cipaterson/dotfiles.git
-dotfiles_repo_versio: main
-configure_dotfiles: false
+dotfiles_repo_local_destination: "~/.dotfiles"
+dotfiles_repo_version: main
+configure_dotfiles: true
 
 homebrew_taps:
   - federico-terzi/espanso
 
 homebrew_uninstalled_packages:
   - cowsay
-  - sqlite
   - mcrypt
   - node
   - nvm
@@ -16,6 +16,7 @@ homebrew_uninstalled_packages:
 homebrew_installed_packages:
   - espanso
   - borgbackup
+  - romkatv/powerlevel10k/powerlevel10k
 
 homebrew_cask_apps:
   - Joplin
@@ -27,16 +28,14 @@ homebrew_cask_apps:
   - Flycut
   - vlc
   - visual-studio-code
-  - romkatv/powerlevel10k/powerlevel10k
   - brave-browser
   - multipass
-    ## - filezilla # There is no cask
 
 mas_installed_apps:
   #  - { id: 443987910, name: "1Password" }
   #  - { id: 498486288, name: "Quick Resizer" }
   #  - { id: 557168941, name: "Tweetbot" }
-  ##  - { id: 497799835, name: "Xcode" }
+  - { id: 497799835, name: "Xcode" }
   - { id: 405399194, name: "Kindle" }
   - { id: 1103915944, name: "Greeenshot" }
 
@@ -51,7 +50,8 @@ mas_installed_apps:
 #pip_packages:
 #  - name: mkdocs
 
-configure_dock: true
+# TODO: latest version of dockutil in homebrew has a broken shebang, wait for homebrew to be updated
+configure_dock: false
 dockitems_remove:
   - TV
   - Maps
