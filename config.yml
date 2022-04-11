@@ -1,7 +1,15 @@
 dotfiles_repo: https://github.com/cipaterson/dotfiles.git
 dotfiles_repo_local_destination: "~/.dotfiles"
+
 dotfiles_repo_version: main
 configure_dotfiles: true
+dotfiles_files:
+  - .zshrc
+  - .aliases
+  - .gitignore
+  - .inputrc
+  - .osx
+  - .vimrc
 
 homebrew_taps:
   - federico-terzi/espanso
@@ -32,12 +40,18 @@ homebrew_cask_apps:
   - multipass
 
 mas_installed_apps:
+  []
   #  - { id: 443987910, name: "1Password" }
   #  - { id: 498486288, name: "Quick Resizer" }
   #  - { id: 557168941, name: "Tweetbot" }
-  - { id: 497799835, name: "Xcode" }
-  - { id: 405399194, name: "Kindle" }
-  - { id: 1103915944, name: "Greeenshot" }
+  # - { id: 497799835, name: "Xcode" }
+  # - { id: 405399194, name: "Kindle" }
+  # - { id: 1103915944, name: "Greeenshot" }
+
+configure_sudoers: true
+sudoers_custom_config: |
+  # Allow users in admin group to use sudo with no password.
+  %admin ALL=(ALL) NOPASSWD: ALL
 
 # TODO: You don't have write permissions for the /Library/Ruby/Gems/2.6.0 directory
 #gem_packages:
