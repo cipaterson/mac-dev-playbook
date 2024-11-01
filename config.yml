@@ -23,8 +23,8 @@ homebrew_uninstalled_packages:
 
 homebrew_installed_packages:
   - espanso
-  - borgbackup
-  - romkatv/powerlevel10k/powerlevel10k
+#  - borgbackup
+#  - romkatv/powerlevel10k/powerlevel10k
 
 homebrew_cask_apps:
   - Joplin
@@ -33,11 +33,11 @@ homebrew_cask_apps:
   - stretchly
   - rectangle
   - anydesk
-  - Flycut
+#  - Flycut
   - vlc
   - visual-studio-code
   - brave-browser
-  - multipass
+#  - multipass
 
 mas_installed_apps:
   []
@@ -54,14 +54,14 @@ sudoers_custom_config: |
   %admin ALL=(ALL) NOPASSWD: ALL
 
 # TODO: You don't have write permissions for the /Library/Ruby/Gems/2.6.0 directory
-#gem_packages:
+# gem_packages:
 #  - name: bundler
 #    state: latest
 
-#npm_packages:
+# npm_packages:
 #  - name: webpack
 
-#pip_packages:
+# pip_packages:
 #  - name: mkdocs
 
 # TODO: latest version of dockutil in homebrew has a broken shebang, wait for homebrew to be updated
